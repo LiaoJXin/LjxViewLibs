@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义方向虚线-->
+    <declare-styleable name="DottedLineView">
+        <!-- 虚线颜色 -->
+        <attr name="divider_line_color" format="color"/>
+        <!-- 虚线宽度 -->
+        <attr name="dashThickness" format="dimension"/>
+        <!-- 虚线dash宽度 -->
+        <attr name="dashLength" format="dimension"/>
+        <!-- 虚线dash间隔 -->
+        <attr name="dashGap" format="dimension"/>
+        <!-- 虚线朝向 -->
+        <attr name="divider_orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--圆圈进度条-->
+    <declare-styleable name="CircleProgressView">
+        <!--进度值-->
+        <attr name="progress" format="integer" />
+        <!--进度最大值-->
+        <attr name="max" format="integer" />
+        <!--进度颜色-->
+        <attr name="progressColor" format="color" />
+        <!--进度文字-->
+        <attr name="progressTextVisibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="4"/>
+        </attr>
+        <!--进度文字-->
+        <attr name="progressTextSize" format="dimension" />
+        <!--进度文字颜色-->
+        <attr name="progressTextColor" format="color" />
+        <!--进度背景色-->
+        <attr name="progressBackgroundColor" format="color" />
+        <!--进度开始角度 0-360-->
+        <attr name="progressStartAngle" format="float" />
+        <!--圆圈线宽度-->
+        <attr name="progressStrokeWidth" format="dimension" />
+        <!--圆圈半径-->
+        <attr name="progressRadius" format="dimension" />
+        <!--是否帽圆-->
+        <attr name="strokeCapRound" format="boolean" />
+    </declare-styleable>
+
+    <!--样式标签集合-->
+    <declare-styleable name="LabelsView">
+        <attr name="selectType" format="enum">
+            <enum name="NONE" value="1" />
+            <enum name="SINGLE" value="2" />
+            <enum name="SINGLE_IRREVOCABLY" value="3" />
+            <enum name="MULTI" value="4" />
+        </attr>
+
+        <attr name="labelGravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07" />
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11" />
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77" />
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80" />
+            <!-- Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08" />
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003" />
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="maxSelect" format="integer" />
+        <attr name="minSelect" format="integer" />
+        <attr name="maxLines" format="integer" />
+        <attr name="maxColumns" format="integer" />
+        <attr name="isIndicator" format="boolean" />
+        <attr name="labelTextColor" format="reference|color" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelTextWidth" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="labelTextHeight" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="labelTextPadding" format="dimension" />
+        <attr name="labelTextPaddingLeft" format="dimension" />
+        <attr name="labelTextPaddingTop" format="dimension" />
+        <attr name="labelTextPaddingRight" format="dimension" />
+        <attr name="labelTextPaddingBottom" format="dimension" />
+        <attr name="lineMargin" format="dimension" />
+        <attr name="wordMargin" format="dimension" />
+        <attr name="labelBackground" format="reference|color" />
+        <attr name="singleLine" format="boolean" />
+        <attr name="isTextBold" format="boolean" />
+    </declare-styleable>
+
+    <!--可设置单个圆角的CardView-->
+    <declare-styleable name="RadiusCardView">
+        <!--左上圆角大小-->
+        <attr name="rcv_topLeftRadiu" format="dimension" />
+        <!--右上圆角大小-->
+        <attr name="rcv_topRightRadiu" format="dimension" />
+        <!--右下圆角大小-->
+        <attr name="rcv_bottomRightRadiu" format="dimension" />
+        <!--左下圆角大小-->
+        <attr name="rcv_bottomLeftRadiu" format="dimension" />
+    </declare-styleable>
+
+    <!--圆形边线图片控件-->
+    <declare-styleable name="RoundBorderImageView">
+        <attr name="roundBorderWidth" format="dimension"/><!--边线宽度-->
+        <attr name="roundBorderColor" format="color"/><!--边线颜色-->
+        <attr name="roundDrawable" format="color|reference"/><!--图片颜色或资源引用-->
+    </declare-styleable>
+
+    <!--查看全文收起文本控件-->
+    <declare-styleable name="FolderTextView">
+        <attr name="foldLine" format="integer" /><!--折叠行数-->
+        <attr name="foldTxColor" format="color"/><!--折叠查看全文文字颜色-->
+    </declare-styleable>
+
+    <!--渐变色按钮-->
+    <declare-styleable name="GradientButton">
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color"/>
+        <attr name="gradientBtnCorners" format="dimension"/>
+    </declare-styleable>
+
+    <!--带环线颜色按钮-->
+    <declare-styleable name="StrokeSolidButton">
+        <attr name="strokeColor" format="color"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="solidColor" format="color"/>
+        <attr name="strokeBtnCorners" format="dimension"/>
+    </declare-styleable>
+
+    <!--滚轮控件-->
+    <declare-styleable name="pickerview">
+        <attr name="wheelview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="wheelview_textSize" format="dimension"/>
+        <attr name="wheelview_textColorOut" format="color"/>
+        <attr name="wheelview_textColorCenter" format="color"/>
+        <attr name="wheelview_dividerColor" format="color"/>
+        <attr name="wheelview_dividerWidth" format="dimension"/>
+        <attr name="wheelview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+
+    <!--起始位置和终点位置-->
+    <declare-styleable name="StartEndPlaceLayout">
+        <attr name="startPlace" format="string"/>
+        <attr name="endPlace" format="string"/>
+        <attr name="txtSize" format="dimension"/>
+        <attr name="txtColor" format="color"/>
+        <attr name="arrowColor" format="color"/>
+        <attr name="limitSize" format="integer"/>
+    </declare-styleable>
+
+    <!--文字提示右箭头跳转布局-->
+    <declare-styleable name="TextRightArrowLayout">
+        <!--上下padding-->
+        <attr name="padding_top_bottom" format="dimension"/>
+        <!--左右padding-->
+        <attr name="padding_left_right" format="dimension"/>
+        <!--是否显示红色提示点-->
+        <attr name="isShowRed" format="boolean"/>
+        <!--头部标题-->
+        <attr name="headTitle" format="string"/>
+        <attr name="head_title_tx_size" format="dimension"/>
+        <attr name="head_title_tx_color" format="color"/>
+        <!--中间提示文字-->
+        <attr name="hint_text" format="string"/>
+        <attr name="hint_text_tx_size" format="dimension"/>
+        <attr name="hint_text_tx_color" format="color"/>
+        <!--尾部箭头-->
+        <attr name="right_arrow_color" format="color"/>
+    </declare-styleable>
+
+</resources>

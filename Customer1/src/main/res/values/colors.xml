@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+
+    <color name="colorffffff">#ffffff</color>
+    <color name="color212121">#ff212121</color>
+    <color name="colorf6514b">#F6514B</color>
+    <color name="color6e6e6e">#6E6E6E</color>
+    <color name="transparent">#00000000</color>
+    <color name="color0E6CCB">#0E6CCB</color>
+    <color name="color3269f6">#3269F6</color>
+    <color name="colorf0f0f1">#F0F0F1</color>
+    <color name="colorf6f7f8">#F6F7F8</color>
+    <color name="coloreaf0fe">#EAF0FE</color>
+</resources>

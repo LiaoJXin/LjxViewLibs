@@ -1,0 +1,22 @@
+<resources>
+    <item name="tag_key_data" type="id"/>
+    <item name="tag_key_position" type="id"/>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+    <string name="vehicle_number">车牌号</string>
+    <string name="addvehicle_num">请输入5-6位车牌号</string>
+    <string name="del">删除</string>
+    <string name="determine">确定</string>
+
+    <string name="sample_tx1">"黄药师：不久前，我遇上一个人，送给我一坛酒，她说那叫"醉生梦死"，喝了之后，123331可以叫你忘掉以做过的任何事。我很奇怪，为什么会有这样的酒。1231213她说人最大的烦恼，就是记性太好，如果什么都可以忘掉，以后的每一天将会是一个新的开始，那你说这有多开心。89088这坛酒本来打算送给你的，看起来，我们要分来喝了。\n欧阳峰（独白）：123123对于太古怪的东西，我向来很难接受，所以这坛"醉生梦死"我一直没有喝。556775445可能这酒真的有效，从那天晚上开始，黄药师开始忘记了很多事情。"</string>
+
+
+</resources>
